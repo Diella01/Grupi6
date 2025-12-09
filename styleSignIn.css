@@ -1,11 +1,4 @@
-.box {
-    width: 350px;          
-    margin: 40px auto;      
-    padding: 15px;          
-    background-color: #f9f3e7;
-    border: 1px solid #e0c1a0;
-    border-radius: 8px;
-}
+
 
 .box h3 {
     font-size: 22px; 
@@ -62,4 +55,5 @@
 
 .box button:hover {
     background-color: #d18b3f;
+
 }
