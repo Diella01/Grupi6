@@ -1,5 +1,5 @@
 body {
-    background-image: url("image/logo2.png");
+
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -79,4 +79,5 @@ body {
 .footer a {
     text-decoration: none;
     color: #333;
+
 }
