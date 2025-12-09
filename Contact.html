@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Emri i Projektit</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Kontakto</h1>
+    <p>Na shkruaj një mesazh — validim bën JavaScript para dërgimit.</p>
+
+    <form id="contactForm" novalidate>
+      <label>
+        Emri
+        <input type="text" id="name" name="name" required minlength="2" />
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" name="email" required />
+      </label>
+
+      <label>
+        Mesazhi
+        <textarea id="message" name="message" required minlength="10"></textarea>
+      </label>
+
+      <div class="form-row">
+        <button type="submit">Dërgo</button>
+        <button type="button" id="resetBtn">Pastro</button>
+      </div>
+
+      <p id="formFeedback" class="feedback" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year3"></span> Emri yt</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
