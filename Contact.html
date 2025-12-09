@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="sq">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -9,22 +9,19 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="index.html">Emri i Projektit</a>
+    <hi>Celestial Chapters-Contact us</hi>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="contact.html" class="active">Contact Us</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>Kontakto</h1>
-    <p>Na shkruaj një mesazh — validim bën JavaScript para dërgimit.</p>
-
+    <h1>Contact Us</h1>
     <form id="contactForm" novalidate>
       <label>
-        Emri
+        Name
         <input type="text" id="name" name="name" required minlength="2" />
       </label>
 
@@ -34,13 +31,18 @@
       </label>
 
       <label>
-        Mesazhi
+        Subject
+        <input type="text" id="subject" name="subject" required minlength="2" />
+      </label>
+
+      <label>
+        Message
         <textarea id="message" name="message" required minlength="10"></textarea>
       </label>
 
       <div class="form-row">
-        <button type="submit">Dërgo</button>
-        <button type="button" id="resetBtn">Pastro</button>
+        <button type="submit">Send</button>
+        <button type="button" id="resetBtn">Clear</button>
       </div>
 
       <p id="formFeedback" class="feedback" aria-live="polite"></p>
@@ -48,10 +50,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">© <span id="year3"></span> Emri yt</div>
+    <div class="container">© <span id="year3"></span> Your Name</div>
   </footer>
-
-  <script src="script.js"></script>
-  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
 </body>
 </html>
