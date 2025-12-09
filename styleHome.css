@@ -38,21 +38,17 @@ body {
     gap: 20px;
     margin: 20px 0;
 }
-
 .boxes .box {
     background-color: #f0f0f0;
     padding: 15px 30px;
     text-align: center;
     cursor: pointer;
 }
-
 .boxes .box a {
     text-decoration: none;
     font-weight: bold;
     color: #333;
 }
-
-
 .boxes .box:hover {
     background-color: #e0d4b8;
     transform: translateY(-5px);
@@ -64,21 +60,19 @@ body {
     padding: 20px;
     text-align: center;
 }
-
 .footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .footer li {
     display: inline;
     margin: 0 10px;
 }
-
 .footer a {
     text-decoration: none;
     color: #333;
 
 }
+
 
